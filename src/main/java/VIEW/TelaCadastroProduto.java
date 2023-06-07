@@ -5,7 +5,7 @@
 package VIEW;
 
 import DAO.DAO;
-import DTO.DTOCadastrarProdutos;
+import DTO.DTOProdutos;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
@@ -48,8 +48,6 @@ public class TelaCadastroProduto extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         txtQuantidade = new javax.swing.JTextField();
         btnInserir = new javax.swing.JButton();
-        btnAtualizar = new javax.swing.JButton();
-        btnDeletar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         txtPreco1 = new javax.swing.JTextField();
 
@@ -78,20 +76,6 @@ public class TelaCadastroProduto extends javax.swing.JFrame {
         btnInserir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInserirActionPerformed(evt);
-            }
-        });
-
-        btnAtualizar.setText("Atualizar");
-        btnAtualizar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAtualizarActionPerformed(evt);
-            }
-        });
-
-        btnDeletar.setText("Deletar");
-        btnDeletar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeletarActionPerformed(evt);
             }
         });
 
@@ -131,11 +115,7 @@ public class TelaCadastroProduto extends javax.swing.JFrame {
                                 .addComponent(txtQuantidade, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(42, 42, 42)
-                        .addComponent(btnInserir)
-                        .addGap(73, 73, 73)
-                        .addComponent(btnAtualizar)
-                        .addGap(95, 95, 95)
-                        .addComponent(btnDeletar)))
+                        .addComponent(btnInserir)))
                 .addContainerGap(77, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -154,11 +134,8 @@ public class TelaCadastroProduto extends javax.swing.JFrame {
                     .addComponent(txtPreco1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtQuantidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(202, 202, 202)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnInserir)
-                    .addComponent(btnAtualizar)
-                    .addComponent(btnDeletar))
-                .addContainerGap(279, Short.MAX_VALUE))
+                .addComponent(btnInserir)
+                .addContainerGap(451, Short.MAX_VALUE))
         );
 
         pack();
@@ -174,7 +151,7 @@ public class TelaCadastroProduto extends javax.swing.JFrame {
         int quantidade = Integer.parseInt(txtQuantidade.getText());
         String categoria = cmbCategoria.getSelectedItem().toString();
 
-        DTOCadastrarProdutos produto = new DTOCadastrarProdutos(nome, preco, quantidade, categoria);
+        DTOProdutos produto = new DTOProdutos(nome, preco, quantidade, categoria);
         DAO dao = new DAO();
 
         try {
@@ -192,14 +169,6 @@ public class TelaCadastroProduto extends javax.swing.JFrame {
             Logger.getLogger(TelaCadastroProduto.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnInserirActionPerformed
-
-    private void btnAtualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtualizarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAtualizarActionPerformed
-
-    private void btnDeletarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeletarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDeletarActionPerformed
 
     private void txtPreco1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPreco1ActionPerformed
         // TODO add your handling code here:
@@ -245,8 +214,6 @@ public class TelaCadastroProduto extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAtualizar;
-    private javax.swing.JButton btnDeletar;
     private javax.swing.JButton btnInserir;
     private java.awt.Choice choice1;
     private javax.swing.JComboBox<String> cmbCategoria;

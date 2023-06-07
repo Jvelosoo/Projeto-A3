@@ -235,6 +235,7 @@ public class telaCadastroUsuario extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Data de nascimento inválida: formato numérico esperado.");
             return; // Retorna sem executar o restante do código
         }
+        
 // Verifica se o CPF possui 11 dígitos
         if (cpf.length() != 11) {
             JOptionPane.showMessageDialog(null, "CPF inválido: deve conter exatamente 11 dígitos.");
