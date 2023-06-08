@@ -4,6 +4,7 @@
  */
 package VIEW;
 
+import DAO.ConexaoBD;
 import DAO.DAO;
 import DTO.DTOUsuario;
 import javax.swing.JOptionPane;
@@ -135,7 +136,7 @@ public class LoginTela extends javax.swing.JFrame {
         try {
             // Criar um objeto da classe Usuario
             DTOUsuario usuario = new DTOUsuario(login, senha);
-            DAO dao = new DAO();
+            DAO dao = new DAO(ConexaoBD.obtemConexao());
 
             //if(dao.existe(usuario) == true)
             if (dao.existe(usuario)) {

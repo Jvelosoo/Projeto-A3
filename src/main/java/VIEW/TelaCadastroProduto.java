@@ -4,6 +4,7 @@
  */
 package VIEW;
 
+import DAO.ConexaoBD;
 import DAO.DAO;
 import DTO.DTOProdutos;
 import java.awt.event.ActionEvent;
@@ -152,7 +153,7 @@ public class TelaCadastroProduto extends javax.swing.JFrame {
         String categoria = cmbCategoria.getSelectedItem().toString();
 
         DTOProdutos produto = new DTOProdutos(nome, preco, quantidade, categoria);
-        DAO dao = new DAO();
+        DAO dao = new DAO(ConexaoBD.obtemConexao());
 
         try {
             dao.inserirProduto(produto);

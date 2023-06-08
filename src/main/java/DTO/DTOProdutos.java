@@ -7,6 +7,7 @@ public class DTOProdutos {
     private double preco;
     private int quantidade;
     private String categoria;
+    private String vendedor;
 
     public DTOProdutos(String nome, double preco, int quantidade, String categoria) {
         this.nome = nome;
@@ -15,12 +16,30 @@ public class DTOProdutos {
         this.categoria = categoria;
     }
 
-    public DTOProdutos(String nome, String preco, String quantidade, String categoria, String id) {
+    public DTOProdutos(String nome, String preco, String quantidade, String categoria, String id ) {
         this.nome = nome;
         this.preco = Double.parseDouble(preco);
         this.quantidade = Integer.parseInt(quantidade);
         this.categoria = categoria;
         this.id = Integer.parseInt(id);
+    
+    }
+
+    public DTOProdutos(String nome, String preco, String quantidade, String categoria, String id, String vendedor) {
+        this.nome = nome;
+        this.preco = Double.parseDouble(preco);
+        this.quantidade = Integer.parseInt(quantidade);
+        this.categoria = categoria;
+        this.id = Integer.parseInt(id);
+        this.vendedor = vendedor;
+    }
+
+    public String getVendedor() {
+        return vendedor;
+    }
+
+    public void setVendedor(String vendedor) {
+        this.vendedor = vendedor;
     }
 
     public String getNome() {

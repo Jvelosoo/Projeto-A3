@@ -4,6 +4,7 @@
  */
 package VIEW;
 
+import DAO.ConexaoBD;
 import DAO.DAO;
 import DTO.DTOCadastrarUsuario;
 
@@ -244,7 +245,7 @@ public class telaCadastroUsuario extends javax.swing.JFrame {
 
         try {
             DTOCadastrarUsuario cadastrarUsuario = new DTOCadastrarUsuario(nome, nascimento, telefone, cpf, usuario, senha);
-            DAO dao = new DAO();
+            DAO dao = new DAO(ConexaoBD.obtemConexao());
             dao.inserirUsuario(cadastrarUsuario);
             JOptionPane.showMessageDialog(null, "Inserção concluída.");
             txtNome.setText("");
