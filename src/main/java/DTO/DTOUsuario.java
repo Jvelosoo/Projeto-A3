@@ -8,6 +8,10 @@ public class DTOUsuario {
         this.login = login;
         this.senha = senha;
     }
+
+    public DTOUsuario(String login) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     public void setLogin(String login) {
         this.login = login;

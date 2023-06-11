@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package VIEW;
 
 import DAO.ConexaoBD;
@@ -9,6 +6,7 @@ import DAO.DAO;
 import DAO.DAO.TelaListagemProdutosDAO;
 import static DAO.DAO.preencherTabelaVenderComProdutos;
 import DTO.DTOProdutos;
+import DTO.DTOUsuario;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
@@ -21,10 +19,6 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Aluado JK
- */
 public class TelaVenderProdutos extends javax.swing.JFrame {
 
     /**
@@ -32,6 +26,8 @@ public class TelaVenderProdutos extends javax.swing.JFrame {
      */
     public TelaVenderProdutos() {
         initComponents();
+        
+
 
         textFieldQuantidade.getDocument().addDocumentListener(new DocumentListener() {
             @Override

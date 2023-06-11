@@ -1,4 +1,11 @@
-C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\com\mycompany\sistemaacademico\ConexaoBD.java
-C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\com\mycompany\sistemaacademico\DAO.java
-C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\com\mycompany\sistemaacademico\LoginTela.java
-C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\com\mycompany\sistemaacademico\Usuario.java
+C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\DAO\ConexaoBD.java
+C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\VIEW\telaCadastroUsuario.java
+C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\DTO\DTOProdutos.java
+C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\VIEW\TelaVenderProdutos.java
+C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\VIEW\TelaAtualizarProdutos.java
+C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\VIEW\LoginTela.java
+C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\DTO\DTOUsuario.java
+C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\DTO\DTOCadastrarUsuario.java
+C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\DAO\DAO.java
+C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\VIEW\TelaListarVendasUsuario.java
+C:\Users\Aluado JK\Documents\NetBeansProjects\SistemaAcademico\src\main\java\VIEW\TelaCadastroProduto.java

@@ -25,6 +25,10 @@ import javax.swing.table.TableModel;
 
 public class DAO {
 
+    public static String existe() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public DAO(Connection obtemConexao) {
     }
 
